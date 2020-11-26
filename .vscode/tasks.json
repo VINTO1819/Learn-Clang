@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "gcc",
+			"args": [
+				"-o",
+				"${fileBasenameNoExtension}.exe",
+				"${file}"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "run",
+			"type": "shell",
+			"command": "gcc -o ${fileBasenameNoExtension}.exe '${file}';clear;./${fileBasenameNoExtension}.exe; Remove-Item ${fileBasenameNoExtension}.exe",
+			"group":{
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
