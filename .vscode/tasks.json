@@ -4,7 +4,7 @@
 		{
 			"label": "build",
 			"type": "shell",
-			"command": "gcc",
+			"command": "g++",
 			"args": [
 				"-o",
 				"${fileBasenameNoExtension}.exe",
@@ -15,7 +15,7 @@
 		{
 			"label": "run",
 			"type": "shell",
-			"command": "gcc -o ${fileBasenameNoExtension}.exe '${file}';clear;./${fileBasenameNoExtension}.exe; Remove-Item ${fileBasenameNoExtension}.exe",
+			"command": "g++ -o ${fileBasenameNoExtension}.exe '${file}';clear;./${fileBasenameNoExtension}.exe; Remove-Item ${fileBasenameNoExtension}.exe",
 			"group":{
 				"kind": "build",
 				"isDefault": true
