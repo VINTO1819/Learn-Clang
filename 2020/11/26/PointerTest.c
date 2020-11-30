@@ -1,3 +1,8 @@
+/*
+    개인 공부 with C++
+    포인터 공부 1(기초)
+*/
+
 #include <stdio.h>
 
 int main(){
