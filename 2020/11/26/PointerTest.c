@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-    int *HerAddress = NULL;
-    int HerValue = 9503;
+    int *HerAddress = NULL; //변수명 앞에 *을 붙이면 이것은 포인터 변수(= 즉 일종의 주소 저장소)를 선언하는 것임
+    int HerValue = 9503; //정수형 변수 선언(즉, 값 자체를 의미)
     
     //HerValue의 메모리 주소를 HerAddress에 할당, & 연산자는 변수의 메모리 주소를 가져옴
     HerAddress = &HerValue;
 
-    printf("Her address is '%p'\n", *HerAddress);
+    printf("Her address is '%p'\n", HerAddress);
     printf("Her value is '%d'\n", HerValue);
 
     //HerAddress가 가르키는 변수는 HerValue이니, HerAddress를 통해 HerValue 값을 변경할 수 있음
