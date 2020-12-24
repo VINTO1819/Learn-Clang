@@ -8,7 +8,7 @@
 #include <cstdlib>
 
 //전역변수 선언
-int Left = 10; //총 10마리 남음
+int Left = 20; //총 10마리 남음
 int Fail = 0; //실패 횟수
 int Try = 0;
 int Animals[20]; //각자 두 쌍씩 동물들을 넣어둠
