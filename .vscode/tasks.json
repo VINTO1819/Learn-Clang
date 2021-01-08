@@ -15,7 +15,7 @@
 		{
 			"label": "run",
 			"type": "shell",
-			"command": "g++ -o ${fileBasenameNoExtension}.exe '${file}';./${fileBasenameNoExtension}.exe; Remove-Item ${fileBasenameNoExtension}.exe",
+			"command": "chcp 65001;g++ -o ${fileBasenameNoExtension}.exe '${file}';./${fileBasenameNoExtension}.exe; Remove-Item ${fileBasenameNoExtension}.exe",
 			"group":{
 				"kind": "build",
 				"isDefault": true
